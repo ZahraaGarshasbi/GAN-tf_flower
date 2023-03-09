@@ -12,14 +12,13 @@ for gpu in gpus:
     print(gpu)
     
     
-#brining in tensorflow datasets for fashion mnist
+#brining in tensorflow datasets for tf_flower
 import tensorflow_datasets as tfds
 #brining in matplotlib for viz stuff
 from matplotlib import pyplot as plt
 
 
 #use the tensorflow datasets api to bring in the data source
-#ds = tfds.load('fashion_mnist', split='train')
 ds = tfds.load('tf_flowers', split='train')
 
 
